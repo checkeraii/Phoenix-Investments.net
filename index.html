@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phoenix Investments</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f7f7f7; }
+    header, footer { background-color: #1a1a1a; color: white; padding: 20px; text-align: center; }
+    nav a { margin: 0 15px; color: white; text-decoration: none; cursor: pointer; }
+    main { padding: 20px; }
+    section { margin-bottom: 60px; }
+    .team-member, .news-article { margin-bottom: 20px; }
+    form input, form textarea { display: block; margin: 10px 0; padding: 8px; width: 100%; max-width: 500px; }
+    form button { padding: 10px 20px; background-color: #1a1a1a; color: white; border: none; cursor: pointer; }
+    .hero { max-width: 100%; height: auto; border-radius: 10px; margin: 20px 0; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Phoenix Investments</h1>
+    <nav>
+      <a onclick="scrollToSection('about')">About</a>
+      <a onclick="scrollToSection('products')">Products</a>
+      <a onclick="scrollToSection('team')">Team</a>
+      <a onclick="scrollToSection('news')">News</a>
+      <a onclick="scrollToSection('contact')">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <img src="images/hero-banner.png" alt="Hero Banner" class="hero" />
+    <section id="about">
+      <h2>About the Company</h2>
+      <p>Phoenix Investments is an investment firm specializing in asset management, investment consulting, and strategic analysis.</p>
+    </section>
+    <section id="products">
+      <h2>Investment Products</h2>
+      <ul>
+        <li>Equity Investment Portfolios</li>
+        <li>Fixed Income Instruments</li>
+        <li>Real Estate Investment Trusts (REITs)</li>
+        <li>Alternative Investments (private equity, hedge funds)</li>
+        <li>Cryptocurrency & Blockchain Opportunities</li>
+      </ul>
+    </section>
+    <section id="team">
+      <h2>Our Team</h2>
+      <div class="team-member">
+        <strong>John Carter</strong><br>
+        CEO — 15+ years in asset management and strategic planning.
+      </div>
+      <div class="team-member">
+        <strong>Sophia Lee</strong><br>
+        Head of Research — Expert in macroeconomic trends and risk assessment.
+      </div>
+      <div class="team-member">
+        <strong>Michael Davis</strong><br>
+        Investment Advisor — Specializes in portfolio diversification and client relations.
+      </div>
+    </section>
+    <section id="news">
+      <h2>Market News</h2>
+      <div class="news-article">
+        <h3>Global Markets Update - May 2025</h3>
+        <p>Markets have shown signs of stabilization following recent policy decisions from the US Federal Reserve and the ECB...</p>
+      </div>
+      <div class="news-article">
+        <h3>Top 5 Sectors for Q2 Growth</h3>
+        <p>Technology and renewable energy remain at the forefront of investment opportunities in Q2 2025...</p>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Phoenix Investments. All rights reserved.</p>
+  </footer>
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
